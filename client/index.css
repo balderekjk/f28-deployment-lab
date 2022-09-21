@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+}
+
+.feature-art {
+  width: 50vw;
+  max-height: 100vh;
+}
