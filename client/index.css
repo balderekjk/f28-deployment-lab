@@ -2,6 +2,8 @@ body {
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+  background: black;
+  height: 100vh;
 }
 
 .main-content {
@@ -27,6 +29,10 @@ body {
   height: 100%;
 }
 
+hr {
+  border: none;
+}
+
 .sign-up-box {
   background-color: black;
   color: white;
@@ -49,6 +55,7 @@ body {
   padding: 1ch;
   transition-duration: 0.2s;
   transition-delay: 0s;
+  margin-top: 1em;
 }
 
 #submit:hover {
@@ -56,13 +63,23 @@ body {
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .main-content {
     flex-direction: column;
   }
 
   .main-content > div {
     width: 100vw;
-    height: 500px;
+    height: 440px;
+  }
+
+  .sign-up-box {
+    justify-content: start;
+    margin: 1em;
+  }
+
+  hr {
+    border: 2px solid white;
+    width: 100%;
   }
 }
