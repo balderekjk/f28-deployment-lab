@@ -8,10 +8,11 @@ const updateInputVal = (e) => {
 };
 
 const handleSubmit = (e) => {
-  e.preventDefault;
+  e.preventDefault();
   let confirmMsg = document.createElement('p');
   confirmMsg.textContent = `Email: ${inputVal}, was successfully added to email list`;
   emailConfirm.appendChild(confirmMsg);
+  rollbar.log('email successfully submitted');
 };
 
 input.addEventListener('keyup', updateInputVal);
